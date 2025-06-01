@@ -1,0 +1,42 @@
+.definicje {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.definicje ol, .definicje > ul {
+    margin: 10px 0 10px 20px;
+    color: #555;
+}
+
+.definicje li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #333;
+}
+
+article{
+    width: 80%;
+    margin-top: 50px;
+}
+

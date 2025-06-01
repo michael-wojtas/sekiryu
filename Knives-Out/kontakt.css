@@ -1,0 +1,335 @@
+.kontakt {
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+h2 {
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+
+.siu{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+}
+
+.kontakt p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.pasek-informacyjny {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.pasek-informacyjny h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-family: 'Serif', serif;
+}
+
+.pasek-informacyjny div {
+    text-align: center;
+    max-width: 300px;
+}
+
+.pasek-informacyjny strong {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pasek-informacyjny p {
+    font-size: 16px;
+}
+
+
+form {
+    max-width: 800px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background: none;
+
+    grid-column: 2;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 254px;
+}
+
+form .row {
+    display: flex;
+    gap: 20px;
+}
+
+
+form textarea {
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.captcha-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.captcha {
+    height: 40px;
+    width: 150px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.cap-row{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#obrazek {
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+form .checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="checkbox"] {
+    margin-top: 2px;
+}
+
+
+form input[type="submit"]{
+
+    width: 200px;
+
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+
+.kocham-julie-chaber{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+}
+
+form input[type="submit"]:hover {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+.inter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-left: 100px;
+
+
+}
+
+.plus-info p{
+    margin-bottom: 0;
+    text-align: left;
+    width: 200px;
+
+}
+
+.plus-info{
+
+    text-align: left;
+    margin-left: 20px;
+}
+
+.plus-info strong{
+    text-align: left;
+}
+
+.pisz{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-left: 100px;
+}
+
+.mai img{
+    width: 18px;
+    height: 15px;
+}
+
+#mai{
+    width: 18px;
+    height: 15px;
+}
+
+.czerw{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#ma{
+    width: 16px;
+    height: 20px;
+}
+
+.smok-na-prawo{
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    height: fit-content;
+}
+
+.smoczek-right {
+
+    width: 300px;
+    height: 700px;
+    background-image: url('images/prawy-smok.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+
+}
+
+
+
+
+@media (max-width: 1200px){
+    .smoczek-right{
+        display: none;
+    }
+    .smok-na-prawo{
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 0;
+    }
+    form {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .pasek-informacyjny {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .pasek-informacyjny h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .kontakt {
+        padding: 30px 5px;
+        font-size: 15px;
+    }
+    .pasek-informacyjny {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .pasek-informacyjny h1 {
+        font-size: 2rem;
+    }
+    .pasek-informacyjny .plus-info p,
+    .pasek-informacyjny .plus-info strong {
+        font-size: 0.96rem;
+    }
+    .smok-na-prawo {
+        grid-template-columns: 1fr;
+    }
+    form {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    form .row {
+        flex-direction: column;
+        gap: 6px;
+    }
+    form .row > div {
+        min-width: 0;
+        width: 100%;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+        max-width: 100%;
+    }
+    .cap-row {
+        flex-direction: column;
+        gap: 6px;
+        align-items: stretch;
+    }
+    .kocham-julie-chaber {
+        justify-content: center;
+    }
+    form input[type="submit"] {
+        width: 100%;
+        min-width: 0;
+    }
+    #obrazek {
+        margin-left: 0;
+    }
+    form textarea {
+        min-width: 0;
+        width: 100%;
+        min-height: 70px;
+    }
+}

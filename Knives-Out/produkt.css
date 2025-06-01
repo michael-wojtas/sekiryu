@@ -1,0 +1,445 @@
+.kontener-wszytsko {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.side-left {
+    flex-shrink: 0;
+    width: 50%;
+    max-width: 520px;
+    padding: 30px 0 30px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grid-zdjecia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 370px 110px;
+    gap: 15px;
+    width: 100%;
+    height: 600px;
+    max-width: 450px;
+    min-width: 350px;
+}
+
+.duze {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background: #fff center/cover no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.male-filmik {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: #fff url('images/filmik.png') center/cover no-repeat;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+}
+
+.male-zdj {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: #fff url('images/box.png') center/cover no-repeat;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.side-right {
+    width: 50%;
+    min-width: 370px;
+    max-width: 550px;
+    padding: 30px 30px 30px 0;
+    box-sizing: border-box;
+}
+
+.side-right h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.info-cena {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 38px;
+    background: #fff;
+    border: 2px solid #111;
+    border-radius: 18px;
+    padding: 34px 34px 24px 22px;
+    margin-bottom: 38px;
+    box-sizing: border-box;
+    width: 520px;
+    max-width: 700px;
+    min-width: 320px;
+}
+
+.cena {
+    min-width: 235px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-cena {
+    font-size: 2rem;
+    color: #111;
+    font-weight: 700;
+    margin: 0 0 0 0;
+    display: inline-block;
+}
+.old-cena-holder {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+
+#old-cena {
+    font-size: 1.1rem;
+    color: #888;
+    text-decoration: line-through;
+    margin: 0;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.old-cena-holder img {
+    width: 17px;
+    height: 17px;
+    margin-bottom: -2px;
+}
+
+.cena > p {
+    color: #222;
+    font-size: 1rem;
+    margin: 18px 0 0 0;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 200px;
+}
+
+.guziki-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.JP {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    background: #ea2e2e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 10px 12px;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.18s;
+}
+.JP img {
+    height: 22px;
+    width: 22px;
+}
+
+.JP:hover {
+    background: #c32424;
+}
+
+.JC{
+
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 1px solid #EAEAEA;
+    background-color: #EAEAEA;
+    color: black;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+
+}
+
+.JC:hover {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+
+
+.informacje-produkt {
+    margin-top: 38px;
+}
+.gorne-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+}
+
+.gorne-info h3 {
+    font-size: 1.13rem;
+    font-weight: 700;
+    margin: 0;
+    display: inline-block;
+}
+
+.strzalka-w-gore {
+    width: 18px;
+    height: 15px;
+    background: url('images/up-arrow.png') center/contain no-repeat;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+
+.linia {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: black;
+    border-radius: 2px;
+    margin-bottom: 20px;
+
+}
+
+
+.srednie-info,
+.srednie-specyfikacja,
+.srednie-przydatne {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #222;
+    margin-bottom: 16px;
+}
+.srednie-info p{
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.srednie-specyfikacja p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    background: #f5f5f5;
+    padding: 11px 16px 11px 18px;
+    margin: 0 0 7px 0;
+    border-radius: 3px;
+    font-size: 1.07rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.45;
+}
+
+.srednie-specyfikacja p:nth-child(even) {
+    background: transparent;
+    padding-left: 24px;
+    padding-right: 0;
+    margin-bottom: 5px;
+}
+
+.srednie-specyfikacja img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-left: 18px;
+    vertical-align: middle;
+}
+
+.srednie-specyfikacja strong {
+    font-weight: 700;
+    color: #111;
+    font-size: 1.11rem;
+}
+
+
+.powrot {
+    display: inline-block;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    padding: 6px 22px;
+    font-weight: 600;
+    color: #111;
+    cursor: pointer;
+    transition: background 0.18s;
+}
+.powrot:hover {
+    background: #f3f3f3;
+}
+
+.grid-buton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ededed;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: #222;
+    box-shadow: none;
+    margin: 0;
+    padding: 0 6px;
+    user-select: none;
+    border: 1px solid #e0e0e0;
+}
+
+.grid-buton span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.15rem;
+    transition: all 0.13s;
+}
+
+
+.grid-buton span:nth-child(2) {
+    font-weight: 600;
+    font-size: 1.13rem;
+    cursor: default;
+    color: #222;
+}
+
+.grid-buton span:nth-child(1) {
+    width: 30px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.grid-buton span:nth-child(3) {
+    width: 30px;
+    border-left: 1px solid #e0e0e0;
+
+}
+
+
+.grid-buton span:not(:nth-child(2)):hover {
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.produkty-container{
+    width: 100%;
+    place-content: center;
+}
+
+.srednie-przydatne ul{
+    list-style-type: square;
+}
+
+.srednie-przydatne ul li::marker{
+    color: red;
+}
+
+.srednie-przydatne ul li{
+    color: black;
+}
+
+.arrow-left , .arrow-right {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.18s;
+    font-size: 1.8rem;
+}
+.arrow-left:hover , .arrow-right:hover {
+    color: red;
+}
+
+
+@media (max-width: 1170px) {
+    .kontener-wszytsko {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        max-width: 100vw;
+    }
+
+    .side-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-top: 32px;
+    }
+
+    .info-cena{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .srednie-specyfikacja img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+
+    .arrow-left , .arrow-right {
+        display: none;
+    }
+
+
+}
+
+#ilosc {
+    background: #f5f6f7;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+    text-align: center;
+    outline: none;
+    box-shadow: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
